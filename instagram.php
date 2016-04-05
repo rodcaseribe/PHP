@@ -9,11 +9,9 @@
 </form>
 </body>
 <?php
-//$name = test_input($_POST["name"]);
 	header ('Content-type: text/html; charset=UTF-8');
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-    //curl_setopt ($curl, CURLOPT_URL, "https://instagram.com/web/search/topsearch/?context=blended&query=rodolfo");
     if(isset($_POST['btnsubmit'])){
 $variavel = $_POST['Fname'];
 	set_time_limit(10);
@@ -42,10 +40,7 @@ $variavel = $_POST['Fname'];
 <head>
 	<style>
 body {background-color:lightgray}
-h4   {color:blue}
-h6   {color:red}
-h5   {color:green}
-p    {color:green}
+h4   {color:blue}h6   {color:red}h5   {color:green}p    {color:green}
 </style>
 </head>
 <body>
